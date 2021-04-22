@@ -1,0 +1,18 @@
+---
+title: "Data_Products_Assignment1"
+author: H.F.
+date: "4/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,}
+library(leaflet)
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=41.66, lng=-83.614, 
+             popup="University of Toledo-Main Campus")
+```
